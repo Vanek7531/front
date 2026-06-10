@@ -46,11 +46,16 @@
 
   &__grid {
     display: grid;
-    @include fluid-grid($grid-col-min);
+    @include fluid-grid();
     @include fluid(gap, $grid-gap-from, $grid-gap-to);
     margin: 0;
     padding: 0;
     list-style: none;
+
+    .course-card:only-child {
+      max-width: $grid-col-max;
+      justify-self: center;
+    }
   }
 
   &__empty {

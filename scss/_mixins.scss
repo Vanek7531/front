@@ -11,7 +11,7 @@
   );
 }
 
-@mixin fluid-grid($min-col: 360px) {
+@mixin fluid-grid($min-col: $grid-col-min) {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, #{$min-col}), 1fr));
 }
 
