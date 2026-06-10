@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our online courses</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <main class="courses">
+    <div class="courses__decor courses__decor--dots" aria-hidden="true"></div>
+    <div class="courses__decor courses__decor--chevrons-left" aria-hidden="true"></div>
+    <div class="courses__decor courses__decor--chevrons-right" aria-hidden="true"></div>
+
+    <div class="courses__container">
+      <header class="courses__header">
+        <p class="courses__subtitle">Enjoy your studying!</p>
+        <h1 class="courses__title">Our online courses</h1>
+      </header>
+
+      <div class="courses__controls">
+        <nav class="filter-nav" aria-label="Course categories">
+          <ul class="filter-nav__list" id="filter-nav"></ul>
+        </nav>
+
+        <div class="search-box">
+          <label class="search-box__label" for="search-input">Search course</label>
+          <input
+            class="search-box__input"
+            id="search-input"
+            type="search"
+            placeholder="Search course..."
+            autocomplete="off"
+          >
+          <span class="search-box__icon" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <ul class="courses__grid" id="courses-grid" role="list"></ul>
+
+      <p class="courses__empty" id="courses-empty" hidden>
+        No courses found. Try a different search or category.
+      </p>
+
+      <button class="load-more" id="load-more" type="button" hidden>
+        <span class="load-more__icon" aria-hidden="true"></span>
+        <span class="load-more__text">Load more</span>
+      </button>
+    </div>
+  </main>
+
+  <template id="course-card-template">
+    <li class="course-card" role="listitem">
+      <div class="course-card__preview">
+        <img class="course-card__image" src="" alt="" loading="lazy">
+      </div>
+      <div class="course-card__body">
+        <span class="course-card__badge"></span>
+        <h2 class="course-card__title"></h2>
+        <div class="course-card__footer">
+          <span class="course-card__price"></span>
+          <span class="course-card__author"></span>
+        </div>
+      </div>
+    </li>
+  </template>
+
+  <template id="filter-item-template">
+    <li class="filter-nav__item">
+      <button class="filter-nav__button" type="button">
+        <span class="filter-nav__label"></span>
+        <sup class="filter-nav__count"></sup>
+      </button>
+    </li>
+  </template>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

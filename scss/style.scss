@@ -1,0 +1,9 @@
+@use 'variables';
+@use 'mixins';
+
+@use 'blocks/page';
+@use 'blocks/courses';
+@use 'blocks/filter-nav';
+@use 'blocks/search-box';
+@use 'blocks/course-card';
+@use 'blocks/load-more';

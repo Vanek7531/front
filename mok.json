@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "category": "Marketing",
+    "title": "The Ultimate Google Ads Training Course",
+    "price": 100,
+    "instructor": "Jerome Bell",
+    "image": "/images/course1.png"
+  },
+  {
+    "id": 2,
+    "category": "Management",
+    "title": "Product Management Fundamentals",
+    "price": 480,
+    "instructor": "Marvin McKinney",
+    "image": "/images/course2.png"
+  },
+  {
+    "id": 3,
+    "category": "HR & Recruiting",
+    "title": "HR Management and Analytics",
+    "price": 200,
+    "instructor": "Leslie Alexander Li",
+    "image": "/images/course3.png"
+  },
+  {
+    "id": 4,
+    "category": "Marketing",
+    "title": "Brand Management & PR Communications",
+    "price": 530,
+    "instructor": "Kristin Watson",
+    "image": "/images/course4.png"
+  },
+  {
+    "id": 5,
+    "category": "Design",
+    "title": "Graphic Design Basic",
+    "price": 500,
+    "instructor": "Guy Hawkins",
+    "image": "/images/course5.png"
+  },
+  {
+    "id": 6,
+    "category": "Management",
+    "title": "Business Development Management",
+    "price": 400,
+    "instructor": "Dianne Russell",
+    "image": "/images/course6.png"
+  },
+  {
+    "id": 7,
+    "category": "Development",
+    "title": "Highload Software Architecture",
+    "price": 600,
+    "instructor": "Brooklyn Simmons",
+    "image": "/images/course7.png"
+  },
+  {
+    "id": 8,
+    "category": "HR & Recruiting",
+    "title": "Human Resources - Selection and Recruitment",
+    "price": 150,
+    "instructor": "Kathryn Murphy",
+    "image": "/images/course8.png"
+  },
+  {
+    "id": 9,
+    "category": "Design",
+    "title": "User Experience. Human-centered Design",
+    "price": 240,
+    "instructor": "Cody Fisher",
+    "image": "/images/course9.png"
+  },
+  {
+    "id": 10,
+    "category": "Development",
+    "title": "Full Stack Web Development Bootcamp",
+    "price": 750,
+    "instructor": "Robert Fox",
+    "image": "/images/course1.png"
+  },
+  {
+    "id": 11,
+    "category": "Marketing",
+    "title": "Social Media Marketing Masterclass",
+    "price": 180,
+    "instructor": "Jenny Wilson",
+    "image": "/images/course2.png"
+  },
+  {
+    "id": 12,
+    "category": "Design",
+    "title": "UI/UX Design Professional Certificate",
+    "price": 420,
+    "instructor": "Albert Flores",
+    "image": "/images/course3.png"
+  },
+  {
+    "id": 13,
+    "category": "Management",
+    "title": "Agile Project Management",
+    "price": 350,
+    "instructor": "Esther Howard",
+    "image": "/images/course4.png"
+  },
+  {
+    "id": 14,
+    "category": "Development",
+    "title": "Python for Data Science",
+    "price": 520,
+    "instructor": "Courtney Henry",
+    "image": "/images/course5.png"
+  },
+  {
+    "id": 15,
+    "category": "HR & Recruiting",
+    "title": "Talent Acquisition Strategies",
+    "price": 280,
+    "instructor": "Theresa Webb",
+    "image": "/images/course6.png"
+  },
+  {
+    "id": 16,
+    "category": "Marketing",
+    "title": "Content Marketing Strategy",
+    "price": 220,
+    "instructor": "Darrell Steward",
+    "image": "/images/course7.png"
+  },
+  {
+    "id": 17,
+    "category": "Design",
+    "title": "Adobe Photoshop Complete Course",
+    "price": 190,
+    "instructor": "Ralph Edwards",
+    "image": "/images/course8.png"
+  },
+  {
+    "id": 18,
+    "category": "Management",
+    "title": "Strategic Business Management",
+    "price": 680,
+    "instructor": "Bessie Cooper",
+    "image": "/images/course9.png"
+  },
+  {
+    "id": 19,
+    "category": "Development",
+    "title": "Mobile App Development with React Native",
+    "price": 590,
+    "instructor": "Jerome Bell",
+    "image": "/images/course1.png"
+  },
+  {
+    "id": 20,
+    "category": "HR & Recruiting",
+    "title": "Employee Relations and Engagement",
+    "price": 240,
+    "instructor": "Arlene McCoy",
+    "image": "/images/course2.png"
+  },
+  {
+    "id": 21,
+    "category": "Marketing",
+    "title": "Email Marketing Automation",
+    "price": 160,
+    "instructor": "Devon Lane",
+    "image": "/images/course3.png"
+  },
+  {
+    "id": 22,
+    "category": "Design",
+    "title": "Motion Graphics with After Effects",
+    "price": 450,
+    "instructor": "Cameron Williamson",
+    "image": "/images/course4.png"
+  },
+  {
+    "id": 23,
+    "category": "Management",
+    "title": "Leadership and Team Management",
+    "price": 380,
+    "instructor": "Savannah Nguyen",
+    "image": "/images/course5.png"
+  },
+  {
+    "id": 24,
+    "category": "Development",
+    "title": "Cloud Computing with AWS",
+    "price": 720,
+    "instructor": "Jerome Bell",
+    "image": "/images/course6.png"
+  },
+  {
+    "id": 25,
+    "category": "HR & Recruiting",
+    "title": "Performance Management Systems",
+    "price": 310,
+    "instructor": "Marvin McKinney",
+    "image": "/images/course7.png"
+  },
+  {
+    "id": 26,
+    "category": "Marketing",
+    "title": "SEO Fundamentals and Advanced Techniques",
+    "price": 270,
+    "instructor": "Leslie Alexander",
+    "image": "/images/course8.png"
+  },
+  {
+    "id": 27,
+    "category": "Design",
+    "title": "Web Design Principles and Best Practices",
+    "price": 340,
+    "instructor": "Kristin Watson",
+    "image": "/images/course9.png"
+  },
+  {
+    "id": 28,
+    "category": "Management",
+    "title": "Financial Management for Non-Financial Managers",
+    "price": 460,
+    "instructor": "Guy Hawkins",
+    "image": "/images/course1.png"
+  },
+  {
+    "id": 29,
+    "category": "Development",
+    "title": "Machine Learning A-Z: Hands-On Python",
+    "price": 650,
+    "instructor": "Dianne Russell",
+    "image": "/images/course2.png"
+  },
+  {
+    "id": 30,
+    "category": "HR & Recruiting",
+    "title": "Diversity and Inclusion in the Workplace",
+    "price": 200,
+    "instructor": "Brooklyn Simmons",
+    "image": "/images/course3.png"
+  }
+]

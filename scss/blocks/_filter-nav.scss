@@ -1,0 +1,48 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.filter-nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 34px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &--active {
+      .filter-nav__button {
+        color: $color-accent;
+        border-color: $color-accent;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
+    padding: 0 0 4px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font: inherit;
+    @include fluid(font-size, 14, 16);
+    font-weight: 700;
+    color: $color-text-muted;
+    background: none;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+
+  &__count {
+    @include fluid(font-size, 10, 12);
+    font-weight: 700;
+    line-height: 1;
+  }
+}

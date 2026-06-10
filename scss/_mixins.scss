@@ -1,0 +1,28 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+@mixin fluid($property, $from, $to) {
+  $range: math.div($fluid-max, 1px) - math.div($fluid-min, 1px);
+
+  #{$property}: clamp(
+    #{$from}px,
+    calc(#{$from}px + (#{$to} - #{$from}) * ((100vw - #{$fluid-min}) / #{$range})),
+    #{$to}px
+  );
+}
+
+@mixin fluid-grid($min-col: 360px) {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, #{$min-col}), 1fr));
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

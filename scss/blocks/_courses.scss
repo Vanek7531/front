@@ -1,0 +1,88 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.courses {
+  position: relative;
+  @include fluid(padding-block, 40, 80);
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+  }
+
+  &__header {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0 0 12px;
+    @include fluid(font-size, 12, 16);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-text-muted;
+  }
+
+  &__title {
+    margin: 0;
+    @include fluid(font-size, $title-size-from, $title-size-to);
+    font-weight: 900;
+    line-height: 1.3;
+    color: $color-text;
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__grid {
+    display: grid;
+    @include fluid-grid($grid-col-min);
+    @include fluid(gap, $grid-gap-from, $grid-gap-to);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__empty {
+    margin: 40px 0 0;
+    text-align: center;
+    @include fluid(font-size, 14, 18);
+    color: $color-text-muted;
+  }
+
+  &__decor {
+    position: absolute;
+    pointer-events: none;
+
+    &--dots {
+      top: 40px;
+      right: 5%;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--chevrons-left {
+      top: 50%;
+      left: 0;
+      width: 60px;
+      height: 200px;
+    }
+
+    &--chevrons-right {
+      top: 30%;
+      right: 0;
+      width: 60px;
+      height: 200px;
+    }
+  }
+}

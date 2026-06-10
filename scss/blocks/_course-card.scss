@@ -1,0 +1,105 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: $color-white;
+  box-shadow: 0 4px 24px rgba(154, 156, 165, 0.18);
+  overflow: hidden;
+
+  &__preview {
+    position: relative;
+    aspect-ratio: 390 / 240;
+    background-color: $card-preview-bg;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 80%;
+    height: auto;
+    transform: translateX(-50%);
+    object-fit: contain;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 12px;
+    padding: 24px;
+  }
+
+  &__badge {
+    align-self: flex-start;
+    padding: 4px 8px;
+    border-radius: 4px;
+    @include fluid(font-size, 12, 14);
+    font-weight: 700;
+    line-height: 1.5;
+    color: $color-white;
+
+    &--marketing {
+      background-color: $badge-marketing;
+    }
+
+    &--management {
+      background-color: $badge-management;
+    }
+
+    &--hr {
+      background-color: $badge-hr;
+    }
+
+    &--design {
+      background-color: $badge-design;
+    }
+
+    &--development {
+      background-color: $badge-development;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    @include fluid(font-size, 16, 20);
+    font-weight: 700;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    @include fluid(font-size, 14, 18);
+  }
+
+  &__price {
+    font-weight: 700;
+    color: $color-accent;
+
+    &::after {
+      content: '|';
+      margin-left: 8px;
+      font-weight: 400;
+      color: $color-text-light;
+    }
+  }
+
+  &__author {
+    color: $color-text-muted;
+
+    &::before {
+      content: 'by ';
+    }
+  }
+
+}

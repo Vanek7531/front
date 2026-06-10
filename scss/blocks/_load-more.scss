@@ -1,0 +1,35 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 60px auto 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  @include fluid(font-size, 14, 16);
+  font-weight: 700;
+  color: $color-text-muted;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-text;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+}

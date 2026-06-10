@@ -1,0 +1,42 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.search-box {
+  position: relative;
+  flex-shrink: 0;
+  width: min(100%, 320px);
+
+  &__label {
+    @include visually-hidden;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px 44px 12px 16px;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    @include fluid(font-size, 14, 16);
+    color: $color-text;
+    background-color: $color-white;
+    outline: none;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: $color-text-light;
+    }
+
+    &:focus {
+      border-color: $color-accent;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
